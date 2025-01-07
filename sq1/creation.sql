@@ -47,6 +47,9 @@ CREATE TABLE FEES_PAID (
   upload_date_time datetime
 );
 
+ALTER TABLE ITERATION_OFFER
+ADD status varchar(20);
+
 CREATE TABLE WITHDRAWS (
   app_no VARCHAR(20) PRIMARY KEY,
   date datetime NOT NULL,
@@ -63,8 +66,18 @@ remark varchar(20) NOT NULL
 
 );
 
-ALTER TABLE ITERATION_OFFER
-ADD status varchar(20);
 
+
+CREATE TABLE ITERATION_OFFER_t2 (
+  app_no VARCHAR(20) ,
+  itr_no int not null ,
+  offer VARCHAR(20) NOT NULL,
+  scholarship int,
+  uploaded_by VARCHAR(20) NOT NULL,
+  upload_datetime datetime,
+  status varchar(20),
+  primary key(app_no , itr_no)
+  
+);
 
 
