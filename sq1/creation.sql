@@ -55,6 +55,16 @@ CREATE TABLE WITHDRAWS (
 );
 
 
+CREATE TABLE LOGS_T (
+upload_date datetime NOT NULL,
+uploaded_by varchar(20) NOT NULL,
+category varchar(20) NOT NULL,
+remark varchar(20) NOT NULL
+
+);
+
+ALTER TABLE ITERATION_OFFER
+ADD status varchar(20);
 
 
 
