@@ -39,7 +39,7 @@ CREATE TABLE MASTER_T (
 ADD status varchar(20);
 */
 
-CREATE TABLE ITERATION_OFFER_t2 (
+CREATE TABLE ITERATION_OFFER (
   app_no VARCHAR(20) ,
   itr_no int not null ,
   offer VARCHAR(20) NOT NULL,
